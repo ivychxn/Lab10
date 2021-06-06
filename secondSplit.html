@@ -29,10 +29,11 @@
       // The key here represents the ID of the user/account/etc you're trying to evaluate a treatment for
       var treatment = client.getTreatment('DoubleColumn');
       if (treatment == 'on') {
-        document.querySelector('main').classList.add('double-column')
+        // header background should be a light orange
+        document.querySelector("header").style.backgroundColor = "#ffc3a0";
       } else if (treatment == 'off') {
-        // insert code here to show off treatment
-        document.querySelector('main').classList.remove('double-column')
+        // header background should be a light lilac
+        document.querySelector("header").style.backgroundColor = "#cc99cc";
       } else {
         // insert your control treatment code here
       }
